@@ -1,0 +1,167 @@
+@font-face
+{
+    font-family: oswald;
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf');  
+}
+
+@font-face
+{
+    font-family: roboto;
+    font-weight: lighter;
+    src: url('../assets/fonts/Roboto-Light.ttf');  
+}
+
+@font-face
+{
+    font-family: roboto;
+    font-weight: bold;
+    src: url('../assets/fonts/Roboto-Black.ttf');  
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: roboto, oswald, sans-serif;
+}
+
+.fuera {
+    display: none;
+}
+
+.cont-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-form p {
+    text-align: center;
+    font-size: 3vh;
+    color: grey;
+}
+
+.cont-title-login {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+.cont-title-login h1 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 6vh;
+}
+
+.cont-title-login .barra {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    background: #c3ffed;
+    height: 3.5vh;
+    width: 140%;
+    margin: auto;
+}
+
+.cont-form .cont-password {
+    position: relative;
+}
+.cont-form .cont-password div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 7.5vh;
+    width: 7.5vh;
+    border-radius: 50%;
+}
+
+.cont-form .cont-password img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-out;
+}
+
+.cont-form .cont-password img:hover {
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in;
+}
+
+input {
+    font-size: 2.3vh;
+    display: block;
+    width: 27vw;
+    padding: 1em;
+    border: 0;
+    margin: 9vh auto;
+    border-radius: 2em;
+}
+
+input[type=password] {
+    outline: none;
+    text-align: center;
+    border: 1px solid black;
+    background: white;
+}
+
+.cont-redes {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    width: 100%;
+}
+
+.cont-redes div {
+    height: 100%;
+    margin: 0 1vw;
+}
+
+
+.cont-redes img {
+    height: 100%;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+}
+
+.cont-redes img.fiverr {
+    height: 80%;
+    margin: 5% 0;
+}
+
+.cont-redes img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+}
+
+/* Media queries */
+@media (max-width: 1000px) {
+    /* .cont-form { width: 50vw; } */
+}
+@media (max-width: 700px) {
+    /* .cont-form { width: 70vw; } */
+}
+@media (max-width: 500px) {
+    /* .cont-form { width: 90vw; } */
+}
+
